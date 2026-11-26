@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OfficeSupply Online - Versão Variante B</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<div class="header-container">
+<a href="#inicio" class="logo">OfficeSupply <span>Online</span></a>
+<nav>
+<a href="#inicio">Início</a>
+<a href="#produtos">Produtos</a>
+<a href="#promocoes">Promoções</a>
+<a href="#contato">Contato</a>
+</nav>
+<a href="#produtos" class="cart">🛒 Carrinho</a>
+<a href="product-page-control.html?versao=A" class="variant-switch track-click"
+    data-switch-version="A" data-action="trocar-para-A" data-product="Teste A/B">
+    Ver versão A
+</a>
+</div>
+</header>
+<main>
+<section id="inicio" class="container">
+<div class="welcome">
+<span class="tag">COLEÇÃO ESPECIAL</span>
+<h1>Organize seu espaço.<br>Potencialize seus resultados.</h1>
+<p>Produtos selecionados para transformar sua rotina de trabalho.</p>
+<a href="#produtos" class="secondary-button track-click"
+              data-action="explorar-produtos" data-product="Catálogo">
+               Explorar produtos
+</a>
+</div>
+<section class="product-detail">
+<div class="product-image">
+<img src="img001.jpeg" alt="Kit Escritório Premium">
+</div>
+<div class="product-info">
+<span class="highlight">DESTAQUE DA COLEÇÃO</span>
+<h2>Kit Escritório Premium Clássico</h2>
+<p class="category">Categoria: Kits Essenciais</p>
+<p class="price">R$ 299,90</p>
+<p class="description">
+                   Um kit completo com itens essenciais de alta qualidade
+                   para o seu dia a dia no escritório. Inclui canetas,
+                   cadernos, post-its e organizadores. Perfeito para quem
+                   busca funcionalidade, praticidade e organização.
+</p>
+<ul class="benefits">
+<li>✓ Canetas esferográficas de ponta fina</li>
+<li>✓ Caderno capa dura A5</li>
+<li>✓ Bloco de notas adesivas</li>
+<li>✓ Organizador de mesa compacto</li>
+</ul>
+<button class="primary-button track-click"
+                   data-action="adicionar-carrinho"
+                   data-product="Kit Escritório Premium">
+                   Adicionar ao Carrinho
+</button>
+<p class="security">🔒 Compra segura | Qualidade garantida</p>
+</div>
+</section>
+</section>
+<section id="produtos" class="container products-section">
+<div class="section-heading">
+<span class="tag">NOSSA SELEÇÃO</span>
+<h2>Outros produtos para você</h2>
+<p>Encontre soluções para melhorar sua produtividade.</p>
+</div>
+<div class="product-grid">
+<article class="product-card">
+<img src="mouse.jpg" alt="Mouse Ergonômico Bluetooth">
+<span class="product-label">TECNOLOGIA</span>
+<h3>Mouse Ergonômico Bluetooth Silence</h3>
+<p>Mais conforto e precisão para sua rotina de trabalho.</p>
+<strong>R$ 149,90</strong>
+<button class="card-button track-click"
+                   data-action="ver-detalhes"
+                   data-product="Mouse Ergonômico">
+                   Ver detalhes
+</button>
+</article>
+<article class="product-card">
+<img src="img001.jpeg" alt="Kit Escritório Premium">
+<span class="product-label">MAIS VANTAJOSO</span>
+<h3>Kit Escritório Premium Clássico</h3>
+<p>Praticidade e organização em um único kit.</p>
+<strong>R$ 299,90</strong>
+<button class="card-button track-click"
+                   data-action="ver-detalhes"
+                   data-product="Kit Escritório Premium">
+                   Ver detalhes
+</button>
+</article>
+<article class="product-card">
+<img src="img001.jpeg" alt="Kit Organizador Executivo">
+<span class="product-label">ORGANIZAÇÃO</span>
+<h3>Kit Organizador Executivo</h3>
+<p>Deixe seu ambiente mais funcional e organizado.</p>
+<strong>R$ 189,90</strong>
+<button class="card-button track-click"
+                   data-action="ver-detalhes"
+                   data-product="Kit Organizador Executivo">
+                   Ver detalhes
+</button>
+</article>
+</div>
+</section>
+<section id="promocoes" class="container information-section">
+<span class="tag">OPORTUNIDADES ESPECIAIS</span>
+<h2>Promoções para renovar seu escritório</h2>
+<p>
+           Confira nossa seleção de produtos e encontre soluções
+           para tornar sua rotina mais prática e produtiva.
+</p>
+<a href="#produtos" class="secondary-button track-click"
+          data-action="acessar-promocoes" data-product="Promoções">
+           Conferir produtos
+</a>
+</section>
+<section id="contato" class="container information-section">
+<span class="tag">ATENDIMENTO</span>
+<h2>Fale com a OfficeSupply</h2>
+<p>
+           Precisa de ajuda para escolher seus produtos?
+           Nossa equipe está pronta para atender você.
+</p>
+<a href="mailto:contato@officesupply.com"
+          class="secondary-button track-click"
+          data-action="contato" data-product="Atendimento">
+           Entrar em contato
+</a>
+</section>
+<section class="results container">
+<h2>Painel de acompanhamento</h2>
+<p>Versão atual: <strong id="current-version">B</strong></p>
+<div class="metrics">
+<div>
+<span>Visualizações</span>
+<strong id="impressions">0</strong>
+</div>
+<div>
+<span>Total de cliques</span>
+<strong id="total-clicks">0</strong>
+</div>
+<div>
+<span>Taxa de cliques</span>
+<strong id="ctr">0%</strong>
+</div>
+</div>
+<h3>Cliques por elemento</h3>
+<div id="click-details"></div>
+<button id="reset-results" class="reset-button">
+           Zerar resultados
+</button>
+</section>
+</main>
+<footer>
+<p>© 2026 OfficeSupply Online. Todos os direitos reservados a Victória Heloísa de Melo Teixeira
+</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
